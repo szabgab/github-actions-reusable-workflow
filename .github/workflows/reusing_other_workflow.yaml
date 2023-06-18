@@ -1,0 +1,10 @@
+name: Reusing
+
+on:
+  push:
+  #workflow_dispatch: # to allow manual triggering via the UI of Github
+
+jobs:
+  run-reusable:
+    uses: ./.github/workflows/reusable.yaml
+
