@@ -5,6 +5,14 @@ on:
   #workflow_dispatch: # to allow manual triggering via the UI of Github
 
 jobs:
+  regular:
+    runs-on: ubuntu-latest
+    name: Regular
+
+    steps:
+    - name: Regular
+      run: echo Just a regular job
+
   run-reusable:
     uses: ./.github/workflows/reusable.yaml
 
